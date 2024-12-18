@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.da8ee45a.css",
-    "main.js": "/static/js/main.4c9f9fd5.js",
-    "static/media/left-img.jpeg": "/static/media/left-img.bf6219eae74cd83aae81.jpeg",
-    "static/media/Vans.png": "/static/media/Vans.a50cbf7346f5f2c1448b.png",
-    "static/media/right-img.jpeg": "/static/media/right-img.2d5bf78be87ccb3b9687.jpeg",
-    "static/media/img_home.png": "/static/media/img_home.720de3618a007da4d482.png",
-    "static/media/New balance.png": "/static/media/New balance.ef12adcd37915238807c.png",
-    "static/media/Adidas.png": "/static/media/Adidas.f8a82c5a47bcd5fa78c8.png",
-    "static/media/skechers.png": "/static/media/skechers.6db43ac71a7f1b25ee33.png",
-    "index.html": "/index.html",
-    "main.da8ee45a.css.map": "/static/css/main.da8ee45a.css.map",
-    "main.4c9f9fd5.js.map": "/static/js/main.4c9f9fd5.js.map"
+    "main.css": "/ourshoes/static/css/main.7ce9014c.css",
+    "main.js": "/ourshoes/static/js/main.74ebfa1f.js",
+    "static/media/Store.png": "/ourshoes/static/media/Store.247766e9b28ee400ef51.png",
+    "static/media/Vans.png": "/ourshoes/static/media/Vans.a50cbf7346f5f2c1448b.png",
+    "static/media/img_home.png": "/ourshoes/static/media/img_home.720de3618a007da4d482.png",
+    "static/media/Newbalance.png": "/ourshoes/static/media/Newbalance.ef12adcd37915238807c.png",
+    "static/media/Adidas.png": "/ourshoes/static/media/Adidas.f8a82c5a47bcd5fa78c8.png",
+    "static/media/skechers.png": "/ourshoes/static/media/skechers.6db43ac71a7f1b25ee33.png",
+    "index.html": "/ourshoes/index.html",
+    "main.7ce9014c.css.map": "/ourshoes/static/css/main.7ce9014c.css.map",
+    "main.74ebfa1f.js.map": "/ourshoes/static/js/main.74ebfa1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.da8ee45a.css",
-    "static/js/main.4c9f9fd5.js"
+    "static/css/main.7ce9014c.css",
+    "static/js/main.74ebfa1f.js"
   ]
 }
