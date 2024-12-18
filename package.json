@@ -2,7 +2,7 @@
   "name": "webpro",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ourshoes.github.io/ourshoes/",
+  "homepage": "https://ourshoes.github.io/ourshoes/",
   "dependencies": {
     "@babel/plugin-transform-class-properties": "^7.25.9",
     "@babel/plugin-transform-nullish-coalescing-operator": "^7.25.9",
