@@ -1,6 +1,5 @@
 import React from "react";
-import left from "./left-img.jpeg";
-import right from "./right-img.jpeg";
+import img from "../image/Store.png";
 import { motion } from "framer-motion";
 import "./About.css";
 
@@ -36,9 +35,8 @@ const About = () => {
             in every step you take.
           </p>
         </div>
-        <div className="about-us-left">
-          <img src={left} alt="Left Image" />
-          <img src={right} alt="Right Image" />
+        <div className="about-us-img">
+          <img src={img} alt="Eror" />
         </div>
       </div>
     </motion.div>

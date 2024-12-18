@@ -1,9 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import imgHome from './img_home.png'; // Pastikan jalur gambar benar
+import imgHome from "../image/img_home.png"; // Pastikan jalur gambar benar
 import "./Home.css";
 
-const Home = () => {
+const Home = ({ setActiveLink }) => {
+  const navigate = useNavigate();
+
+  const handleExplore = () => {
+    setActiveLink("/Product"); // Perbarui activeLink ke 'product'
+    navigate("/Product"); // Navigasi ke halaman Product
+  };
+
   const text = `
     Explore our collection of premium footwear designed for ultimate comfort
     and unmatched style. Whether you're looking for casual wear, athletic
@@ -42,19 +50,26 @@ const Home = () => {
             </motion.span>
           ))}
         </motion.p>
-        <button>Explore Our Product</button>
+        <button onClick={handleExplore}>Explore Our Product</button>
       </div>
- <div className="img">
+      <div className="img">
         <motion.img
           src={imgHome}
           alt="yayay"
-          initial={{ opacity: 0, scale: 0.8, filter: "drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))" }} // Mulai dengan opacity 0 dan skala lebih kecil
-          animate={{ opacity: 1, scale: 1, filter: "drop-shadow(20px 10px 10px rgba(0, 0, 0, 0.3))" }} // Fade-in dan skala kembali normal
+          initial={{
+            opacity: 0,
+            scale: 0.8,
+            filter: "drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))",
+          }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            filter: "drop-shadow(20px 10px 10px rgba(0, 0, 0, 0.3))",
+          }}
           transition={{
-            opacity: { duration: 2 }, // Durasi fade-in
-            scale: { duration: 1, delay: 1 }, // Delay sedikit untuk skala
-            filter: { duration: 1 }
-            
+            opacity: { duration: 2 },
+            scale: { duration: 1, delay: 1 },
+            filter: { duration: 1 },
           }}
         />
       </div>

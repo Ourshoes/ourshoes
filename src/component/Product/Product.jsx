@@ -2,10 +2,10 @@ import React, { useState } from 'react'; // Tambahkan import useState
 import { GrFormPrevious } from "react-icons/gr";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { motion } from "framer-motion";
-import vans from "./Vans.png";
-import skechers from "./skechers.png";
-import adidas from "./Adidas.png";
-import Nb from "./New balance.png";
+import vans from "../image/Vans.png";
+import skechers from "../image/skechers.png";
+import adidas from "../image/Adidas.png";
+import Nb from "../image/Newbalance.png";
 import './Product.css';
 
 

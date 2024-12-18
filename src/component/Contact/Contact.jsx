@@ -23,22 +23,22 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_ourshoes", // Your service ID
-        "template_5uyvf6i", // Your template ID
+        "service_ourshoes", 
+        "template_5uyvf6i", 
         {
           name: formData.name,
-          from_email: formData.email, // Use 'from_email' to map to the sender's email
+          from_email: formData.email, 
           message: formData.message,
         },
-        "jyazGJ2NCkvXn9IBl" // Your public key
+        "jyazGJ2NCkvXn9IBl" 
       )
       .then(
         () => {
           setStatus("Email sent successfully!");
-          setFormData({ name: "", email: "", message: "" }); // Reset form after success
+          setFormData({ name: "", email: "", message: "" }); 
         },
         (error) => {
-          setStatus("Failed to send email: " + error.text); // Handle any errors
+          setStatus("Failed to send email: " + error.text); 
         }
       );
   };
@@ -62,7 +62,7 @@ const Contact = () => {
           </div>
           <div className="contact-item">
             <FaMapMarkerAlt className="icon" />
-            <span>Jl. Merpati No.123, Jakarta</span>
+            <span>Jl. Makam No.110, Bekasi</span>
           </div>
         </div>
 

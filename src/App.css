@@ -8,7 +8,8 @@ body {
   background: linear-gradient(90deg, rgb(212, 88, 16), rgb(174, 174, 9));
   color: #161616; /* Warna teks */
   min-height: 100vh;
-  overflow: scroll;
+  overflow: hidden;
+  
 }
 
 * {
