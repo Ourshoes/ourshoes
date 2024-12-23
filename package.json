@@ -1,8 +1,8 @@
 {
+  "homepage": "https://ourshoes.github.io/ourshoes/",
   "name": "webpro",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ourshoes.github.io/ourshoes/",
   "dependencies": {
     "@babel/plugin-transform-class-properties": "^7.25.9",
     "@babel/plugin-transform-nullish-coalescing-operator": "^7.25.9",
@@ -33,7 +33,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
