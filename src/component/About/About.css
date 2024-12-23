@@ -1,0 +1,91 @@
+/* About Us Section */
+.about-us-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* Arrange elements in a row */
+  height: 100vh;
+  overflow: auto;
+  padding: 0 20px; /* Add horizontal padding for some spacing */
+}
+
+.about-us-content {
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 300px; /* Add space at the bottom */
+  margin-left: 20px;
+}
+
+.about-us-img img {
+  width: 100%;
+  max-width: 400px; /* Maximum width of the image */
+  height: auto; /* Maintain proportional height */
+  margin-right: 50px;
+  border-radius: 10px; /* Rounded corners for the image */
+  filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.6)); /* Drop shadow for a 3D effect */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition for hover effects */
+  margin-bottom: 50px;
+  transform: perspective(1000px) rotateY(-40deg) rotateX(10deg); /* Add 3D rotation effect */
+}
+
+.about-us-img img:hover {
+  transform: none; /* Remove the rotation on hover */
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.5;
+  text-align: left; /* Align text to the left */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column; /* Switch to column layout on small screens */
+    align-items: center; /* Center content */
+  }
+
+  .about-us-img img {
+    max-width: 100%; /* Make image take full width */
+    padding: 20px; /* Add padding around the image */
+    transform: none; /* Remove 3D transform effect */
+    margin-right: 0; /* Reset margin */
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Smaller heading size for small screens */
+    margin-top: 50px;
+  }
+
+  p {
+    font-size: 1rem; /* Smaller paragraph text size */
+    text-align: center; /* Center the paragraph text */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us-content {
+    padding-bottom: 150px; /* Less padding on very small screens */
+  }
+
+  h1 {
+    font-size: 1.6rem; /* Further reduce heading size */
+  }
+
+  p {
+    font-size: 0.9rem; /* Smaller font for paragraphs */
+  }
+}

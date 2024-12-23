@@ -1,0 +1,179 @@
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.nav-tittle {
+  color: white; /* Menetapkan warna teks putih */
+  font-size: 2rem; /* Ukuran font yang lebih besar */
+  font-weight: bold; /* Teks yang tebal */
+  font-family: "Josefin Sans", sans-serif; /* Menggunakan font Josefin Sans */
+  text-shadow: 0 0 5px #ff6347, 0 0 10px #ff6347, 0 0 15px #323131; /* Efek bayangan pada teks */
+  transform: rotate(5deg); /* Sedikit rotasi untuk efek menarik */
+  margin-left: 1rem; /* Memberikan margin kiri */
+}
+
+.nav-tittle:hover {
+  transform: rotate(-5deg);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly; /* Membuat elemen dalam navbar tersebar */
+  align-items: center; /* Menjaga elemen terpusat secara vertikal */
+  background: transparent; /* Menambahkan latar belakang agar navbar lebih jelas */
+  width: 80%; /* Menetapkan navbar penuh di layar */
+}
+
+.nav-links a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-links a.active {
+  border-bottom-color: black;
+  transition: border-bottom-color 1.1s ease-in;
+  color: rgb(71, 70, 70);
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  display: none; /* Sidebar tersembunyi */
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  padding: 2rem;
+  z-index: 1000;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  right: 0; /* Sidebar muncul */
+}
+
+.sidebar-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+
+
+
+/* Media Query: For screens smaller than 768px (mobile and tablet) */
+@media screen and (max-width: 768px) {
+  /* Header and Navbar */
+  header {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .nav-tittle {
+    font-size: 1.5rem; /* Reduce font size for small screens */
+    margin-left: 0; /* Center title */
+    text-align: center;
+    transform: none; /* Remove rotation for better readability */
+  }
+
+  .navbar {
+    display: none; /* Hide navbar for small screens */
+    flex-direction: column; /* Stack items vertically if needed */
+  }
+
+  .menu-toggle {
+    display: block; /* Show menu toggle button */
+    z-index: 9999; /* Make sure it's on top */
+  }
+
+  .sidebar.open {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background with transparency */
+    backdrop-filter: blur(10px); /* Blur effect behind sidebar */
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 70%; /* Make sidebar narrower */
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 30px 0px 0px 30px;
+    padding: 2rem;
+    padding-left: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for a more elegant look */
+  }
+
+  .sidebar-links a {
+    font-size: 1.5rem; /* Larger text for sidebar links */
+    margin: 1.5rem 0; /* More spacing between items */
+  }
+
+
+}
+
+/* Media Query: For screens smaller than 480px (very small devices) */
+@media screen and (max-width: 480px) {
+  /* Header adjustments */
+  .nav-tittle {
+    font-size: 1.3rem; /* Further reduce font size */
+    margin-left: 0; /* Center title */
+    text-align: center;
+  }
+
+  /* Sidebar adjustments */
+  .sidebar.open {
+    width: 100%; /* Make sidebar take full screen width */
+    padding-left: 30px; /* Reduce padding */
+  }
+
+  .sidebar-links a {
+    font-size: 1.3rem; /* Adjust link font size */
+  }
+
+  /* Navbar toggle adjustments */
+  .navbar {
+    display: none; /* Ensure navbar is hidden */
+  }
+
+  .menu-toggle {
+    display: block; /* Keep toggle visible */
+  }
+}
+
+/* Media Query: For large screens (tablets and laptops) */
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Hide menu toggle for larger screens */
+  }
+
+  .navbar {
+    display: flex; /* Show navbar on large screens */
+    flex-direction: row; /* Horizontal navbar layout */
+  }
+
+  .sidebar.open {
+    display: none; /* Sidebar is not visible */
+  }
+}
